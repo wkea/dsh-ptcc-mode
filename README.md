@@ -219,7 +219,7 @@ dsh-ptcc-mode/
 2. patch 插入 `preset-ptc-c`：persona、计划门控、工具列表都在这里声明。
 3. `Interaction` 只挂在这个预设的插件列表里，因此只有 PTC-C 会话能看到它。
 4. `dsh.client` 指向 `lib/client.js`，它注册 `tool.call.toolview` 插槽；工具调用到达时创建沙盒 iframe。
-5. 用户提交答案后，客户端通过 `ctx.remote.session.prompt` 把 `[Interaction answer · callId]` + JSON 作为下一条用户消息发回。
+5. 用户提交答案后，客户端把答案整理成可读文本（标题行「Interaction 已提交 · 组件标题」，下面按 `- 键：值` 逐行列出），通过 `ctx.remote.session.prompt` 作为下一条用户消息发回。
 
 ## 安全
 
