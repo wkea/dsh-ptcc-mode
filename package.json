@@ -1,0 +1,39 @@
+{
+  "name": "@local/dsh-ptcc-mode",
+  "version": "1.2.4",
+  "private": true,
+  "type": "module",
+  "description": "PTC-C (Programmatic Tool Calling with Confirmation): a confirm-before-coding agent preset for DeepSeek Harness, with a sandboxed AI-authored Interaction widget.",
+  "license": "MIT",
+  "author": "wkea",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "agent-preset",
+    "ptc",
+    "interaction",
+    "ai-agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wkea/dsh-ptcc-mode.git"
+  },
+  "homepage": "https://github.com/wkea/dsh-ptcc-mode#readme",
+  "bugs": {
+    "url": "https://github.com/wkea/dsh-ptcc-mode/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools": "./lib/tools.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  }
+}
