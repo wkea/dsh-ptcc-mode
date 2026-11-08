@@ -5,7 +5,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3DA639?style=flat-square" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/DSH-Agent%20Preset-6F42C1?style=flat-square" alt="DSH Agent Preset">
-  <img src="https://img.shields.io/badge/version-1.2.4-0EA5E9?style=flat-square" alt="Version 1.2.4">
+  <img src="https://img.shields.io/badge/version-1.2.5-0EA5E9?style=flat-square" alt="Version 1.2.5">
   <img src="https://img.shields.io/badge/DSH-Desktop%20%2F%20Web-2EA44F?style=flat-square" alt="DSH Desktop / Web">
 </p>
 

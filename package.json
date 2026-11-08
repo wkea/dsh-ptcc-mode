@@ -1,6 +1,6 @@
 {
   "name": "@local/dsh-ptcc-mode",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "private": true,
   "type": "module",
   "description": "PTC-C (Programmatic Tool Calling with Confirmation): a confirm-before-coding agent preset for DeepSeek Harness, with a sandboxed AI-authored Interaction widget.",
