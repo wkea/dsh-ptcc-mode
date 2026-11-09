@@ -186,6 +186,8 @@
             isolate:
               workflowEngine: true
             config:
+              # list_agents 等控制工具已并入 dsh-tool-subagent-control 主模块,
+              # 独立的 /list-agents 子路径在宿主 0.2.2-rc.1 中移除。
               - id: tool-subagent-control
                 name: '@deepseek-ai/dsh-tool-subagent-control'
 
@@ -255,12 +257,11 @@
               fetch: true
               searchTimeoutMs: 60000
 
-          # ── presentation ──────────────────────────────────────────────────
-          # 代码模式呈现(与参考预设的 Code Mode 对应;当前合法值为 ptc)。
-          - id: tool-presentation
-            name: '@deepseek-ai/dsh-agent-tool-presentation'
-            config:
-              mode: ptc
+          # ── PTC 执行器 ───────────────────────────────────────────────────
+          # 代码模式执行(与内置 ptc 预设一致)。旧的
+          # dsh-agent-tool-presentation 包装器已废弃,宿主直接挂 executor 插件。
+          - id: tool-executor-ptc
+            name: '@deepseek-ai/dsh-tool-executor-ptc'
 
           - id: present
             name: '@deepseek-ai/dsh-tool-present'
